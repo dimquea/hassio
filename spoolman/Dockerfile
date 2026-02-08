@@ -16,10 +16,6 @@ RUN apk add --no-cache \
     g++ \
     python3-dev \
     libffi-dev \
-    py3-pip \
-    py3-setuptools \
-    py3-wheel \
-    py3-pdm-backend \
     py3-virtualenv \
     && source_url=$(curl -s https://api.github.com/repos/Donkie/Spoolman/releases/tags/${SPOOLMAN_VERSION} | jq -r '.assets[] | select(.name == "spoolman.zip").browser_download_url') \
     && curl -sSL $source_url -o /tmp/temp.zip \

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.23.1.0
+
+- bump spoolman to 0.23.1
+- bump hassio-addons/base to 20.0.1
+
 ## 0.22.1.1
 
 - bump hassio-addons/base to 18.0.3

@@ -7,4 +7,4 @@ codenotary:
   base_image: codenotary@frenck.dev
   signer: codenotary@frenck.dev
 args:
-  SPOOLMAN_VERSION: v0.22.1
+  SPOOLMAN_VERSION: v0.23.1
