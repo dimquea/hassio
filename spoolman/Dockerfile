@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:18.0.3
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:20.0.1
 FROM ${BUILD_FROM}
 
 ARG SPOOLMAN_VERSION
