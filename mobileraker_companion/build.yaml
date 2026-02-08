@@ -1,0 +1,10 @@
+---
+build_from:
+  aarch64: ghcr.io/hassio-addons/base-python:18.0.0
+  amd64: ghcr.io/hassio-addons/base-python:18.0.0
+  armv7: ghcr.io/hassio-addons/base-python:18.0.0
+codenotary:
+  base_image: codenotary@frenck.dev
+  signer: codenotary@frenck.dev
+args:
+  COMPANION_VERSION: v0.5.0
