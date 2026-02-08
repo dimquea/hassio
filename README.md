@@ -16,4 +16,8 @@ https://github.com/dimquea/hassio
 
 - **[Spoolman](/spoolman/README.md)**
 
-    Keep track of your inventory of 3D-printer filament spools.
+  Keep track of your inventory of 3D-printer filament spools.
+
+- **[Mobileraker Companion](/mobileraker_companion/README.md)**
+
+  Companion for Mobileraker, enabling push notification for Klipper using Moonraker.
