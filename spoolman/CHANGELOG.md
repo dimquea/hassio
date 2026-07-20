@@ -4,6 +4,7 @@
 
 - fix issue#7
 - bump spoolman to 0.24.0 (issue#8)
+- bump hassio-addons/base to 21.0.0
 
 ## 0.23.1.0
 
