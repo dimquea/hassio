@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.24.0.0
+
+- fix issue#7
+
 ## 0.23.1.0
 
 - bump spoolman to 0.23.1
