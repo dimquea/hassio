@@ -12,31 +12,6 @@ if [ "$(basename "$current_dir")" = "scripts" ]; then
 fi
 
 #
-# Install uv if not installed
-#
-local_uv_dir="$(pwd)/uv"
-local_uv_bin="$local_uv_dir/uv"
-
-if command -v uv &> /dev/null; then
-    echo "uv found in PATH. Using system uv."
-else
-    if [ -x "$local_uv_bin" ]; then
-        if "$local_uv_bin" --version &> /dev/null; then
-            echo "Using local uv from $local_uv_dir"
-            export PATH="$local_uv_dir:$PATH"
-        else
-            echo "Local uv found but failed to run. Installing temporary uv..."
-            curl -LsSf https://astral.sh/uv/install.sh | env UV_UNMANAGED_INSTALL="$local_uv_dir" sh
-            export PATH="$local_uv_dir:$PATH"
-        fi
-    else
-        echo "Installing temporary uv..."
-        curl -LsSf https://astral.sh/uv/install.sh | env UV_UNMANAGED_INSTALL="$local_uv_dir" sh
-        export PATH="$local_uv_dir:$PATH"
-    fi
-fi
-
-#
 # Install Spoolman
 #
 
