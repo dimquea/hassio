@@ -1,5 +1,5 @@
 name: Mobileraker companion
-version: 0.5.0.0
+version: 0.5.0.1
 description: Companion for Mobileraker
 url: https://github.com/dimquea/hassio/tree/main/mobileraker_companion
 slug: mobileraker_companion
@@ -7,11 +7,10 @@ init: false
 arch:
   - aarch64
   - amd64
-  - armv7
 startup: application
 udev: true
 map:
-  - addon_config:rw
+  - app_config:rw
 boot: auto
 options:
   printers: []
