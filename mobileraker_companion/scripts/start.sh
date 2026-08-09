@@ -26,8 +26,6 @@ fi
 echo "$conf" > /config/mobileraker.conf
 echo "$conf"
 
-ls
-
 ENV_DIR="${HOME}/mobileraker-env"
 source $ENV_DIR/bin/activate
 
