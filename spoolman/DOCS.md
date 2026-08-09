@@ -40,6 +40,12 @@ For example: if you want the root to be e.g. `myhost.com/spoolman`, set this to 
 
 If enabled, the client will accept requests from any host. This can be useful when developing, but is also a security risk.
 
+### Option: `legacy_client`
+
+Mirror of internal `SPOOLMAN_LEGACY_CLIENT` env, introdused in [0.26.0](https://github.com/Donkie/Spoolman/releases/tag/v0.26.0). 
+
+If enabled, will be used legacy frontend client.
+
 ## Backup and restore
 
 Add-on store files to own directory in `addon_configs`.

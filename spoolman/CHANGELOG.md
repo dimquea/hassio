@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.26.1.0
+
+- bump spoolman to 0.26.1
+- add `legacy_client` option as Spoolman own `SPOOLMAN_LEGACY_CLIENT`
+
 ## 0.24.0.0
 
 - fix issue#7
