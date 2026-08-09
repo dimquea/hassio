@@ -1,5 +1,5 @@
 name: Spoolman
-version: 0.24.0.0
+version: 0.26.1.0
 description: Run the stable version of Spoolman.
 url: https://github.com/dimquea/hassio/tree/main/spoolman
 slug: spoolman
@@ -7,21 +7,22 @@ init: false
 arch:
   - aarch64
   - amd64
-  - armv7
 startup: application
 udev: true
 webui: "[PROTO:option_name]://[HOST]:[PORT:7912]"
 map:
-  - addon_config:rw
+  - app_config:rw
 boot: auto
 options:
   log_level: "ERROR"
   auto_backup: true
   debug_mode: false
+  legacy_client: false
 schema:
   log_level: str
   auto_backup: bool
   base_path: str?
   debug_mode: bool
+  legacy_client: bool
 ports:
   7912/tcp: 7912
