@@ -22,5 +22,7 @@ SPOOLMAN_LOGGING_LEVEL=$(bashio::config 'log_level')
 export SPOOLMAN_LOGGING_LEVEL
 SPOOLMAN_AUTOMATIC_BACKUP=$(bashio::config 'auto_backup')
 export SPOOLMAN_AUTOMATIC_BACKUP
+SPOOLMAN_LEGACY_CLIENT=$(bashio::config 'legacy_client')
+export SPOOLMAN_LEGACY_CLIENT
 
 /var/spoolman/scripts/start.sh

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.26.1.1
+
+- fix missing `SPOOLMAN_LEGACY_CLIENT` behind `legacy_client` option
+
 ## 0.26.1.0
 
 - bump spoolman to 0.26.1
