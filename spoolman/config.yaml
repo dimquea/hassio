@@ -1,5 +1,5 @@
 name: Spoolman
-version: 0.26.1.1
+version: 0.26.1.3
 description: Run the stable version of Spoolman.
 url: https://github.com/dimquea/hassio/tree/main/spoolman
 slug: spoolman
@@ -9,7 +9,12 @@ arch:
   - amd64
 startup: application
 udev: true
-webui: "[PROTO:option_name]://[HOST]:[PORT:7912]"
+ingress: true
+ingress_port: 7912
+panel_icon: mdi:printer-3d-nozzle
+panel_title: Spoolman
+panel_admin: false
+webui: "http://[HOST]:[PORT:7912]"
 map:
   - app_config:rw
 boot: auto
@@ -18,11 +23,22 @@ options:
   auto_backup: true
   debug_mode: false
   legacy_client: false
+  cors_origin: []
+  allowed_hosts: []
 schema:
   log_level: str
   auto_backup: bool
   base_path: str?
   debug_mode: bool
   legacy_client: bool
+  cors_origin:
+    - str
+  allowed_hosts:
+    - str
 ports:
   7912/tcp: 7912
+ports_description:
+  7912/tcp: >-
+    Direct Spoolman access, needed by Moonraker, OctoPrint and anything else
+    that cannot use the Home Assistant panel. Leave this empty for an
+    Ingress-only setup; the panel keeps working.
