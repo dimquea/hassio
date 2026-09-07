@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.26.1.2
+
+- add Home Assistant Ingress support
+- add `cors_origin` option as Spoolman own `SPOOLMAN_CORS_ORIGIN`
+- add `allowed_hosts` option as Spoolman own `SPOOLMAN_ALLOWED_HOSTS`
+
 ## 0.26.1.1
 
 - fix missing `SPOOLMAN_LEGACY_CLIENT` behind `legacy_client` option
