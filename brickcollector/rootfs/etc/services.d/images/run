@@ -1,0 +1,38 @@
+#!/command/with-contenv bashio
+# ==============================================================================
+# Складывает в кэш картинки того, чем человек владеет.
+#
+# Ничего не ждёт этой службы: картинка, которой в кэше нет, показывается прямо
+# из источника. Кэш нужен для другого — чтобы коллекция не зависела от того,
+# отвечает ли BrickLink.
+# ==============================================================================
+# shellcheck source=/dev/null
+source /usr/lib/brickcollector.sh
+
+brickcollector::environment
+
+if bashio::config.false 'fetch_images'; then
+    bashio::log.info "Загрузка картинок выключена"
+
+    while true; do
+        sleep 86400
+    done
+fi
+
+# Настройки аддона у уже установленной копии — те, что человек сохранил когда-то;
+# новых ключей там нет, и bashio отдаёт за них "null". Своё значение по умолчанию
+# здесь не дублирование config.yaml, а защита от пустоты.
+batch=$(bashio::config 'fetch_batch')
+interval=$(bashio::config 'fetch_interval')
+
+case "${batch}" in '' | null) batch=200 ;; esac
+case "${interval}" in '' | null) interval=300 ;; esac
+
+bashio::log.info "Картинки: по ${batch} за раз, раз в ${interval} с"
+
+while true; do
+    php /app/artisan catalog:images --limit="${batch}" --pause=100 --no-interaction \
+        || bashio::log.warning "Загрузка картинок сорвалась, попробую в следующий раз"
+
+    sleep "${interval}"
+done

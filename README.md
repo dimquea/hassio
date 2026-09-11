@@ -21,3 +21,7 @@ https://github.com/dimquea/hassio
 - **[Mobileraker Companion](/mobileraker_companion/README.md)**
 
   Companion for Mobileraker, enabling push notification for Klipper using Moonraker.
+
+- **[BrickCollector](/brickcollector/README.md)**
+
+  A LEGO collection manager.
