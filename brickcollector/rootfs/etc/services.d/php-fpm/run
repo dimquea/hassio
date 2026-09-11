@@ -1,0 +1,14 @@
+#!/command/with-contenv bashio
+# ==============================================================================
+# Держит php-fpm.
+# ==============================================================================
+# shellcheck source=/dev/null
+source /usr/lib/brickcollector.sh
+
+brickcollector::environment
+
+bashio::log.info "Запускаю php-fpm"
+
+# -R: пул работает от root, потому что /config принадлежит root, как и всё в
+# контейнере аддона.
+exec php-fpm84 -R --nodaemonize --fpm-config /etc/php84/php-fpm.conf
