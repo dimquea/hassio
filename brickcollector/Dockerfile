@@ -3,7 +3,7 @@ FROM ${BUILD_FROM}
 
 # Тег приложения, а не ветка: пересборка аддона должна давать то же самое, что
 # и в прошлый раз, а не «то, что сейчас в main».
-ARG BRICKCOLLECTOR_REF=1.0.0
+ARG BRICKCOLLECTOR_REF=1.1.0
 
 WORKDIR /app
 
