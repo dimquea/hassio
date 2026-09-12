@@ -116,5 +116,16 @@ server. The application is [dimquea/BrickCollector][app]; the add-on builds it
 from a tagged source when the image is built, so a rebuild gives you the same
 thing it gave you last time.
 
+## Licence
+
+The application and this add-on are MIT. The image also carries Bootstrap, Vue,
+Inertia, Tom Select and the Material Design Icons font, which are MIT and
+Apache-2.0; their own licences travel inside the image with them.
+
+The catalogue is not part of the image. It is downloaded to your own machine
+from [rgriebl/brickstore-database][db] on first start, and item pictures come
+from BrickLink. That data belongs to its owners and is not covered by the
+licence above.
+
 [db]: https://github.com/rgriebl/brickstore-database
 [app]: https://github.com/dimquea/BrickCollector

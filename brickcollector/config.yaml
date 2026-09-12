@@ -1,5 +1,5 @@
 name: BrickCollector
-version: 1.0.0.0
+version: 1.1.0.0
 description: Self-hosted LEGO collection manager backed by the BrickLink catalog.
 url: https://github.com/dimquea/hassio/tree/main/brickcollector
 slug: brickcollector
