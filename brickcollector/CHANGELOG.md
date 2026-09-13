@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.2.0.0
+
+Built from BrickCollector 1.2.0.
+
+- **A wishlist** — a section for what the collection does not hold but you
+  want. A list and nothing more; a row leads back to the catalogue. Parts are
+  wanted in a colour, sets and minifigures are not. Pictures of wished items
+  are cached in the background, the way the collection's are.
+- **Lists can be ordered** — by item number, name, year, or by how much is
+  held — with a direction beside it. The choice lives in the address, so it
+  survives filtering and paging and can be sent to someone as a link.
+- **A dark interface** — system, light or dark, under Settings. System follows
+  what the device is set to and changes with it.
+- Three fixes: assemblies were missing from the "add a part" dialog; a part
+  missing from a set only as a counterpart — the same brick listed twice, with
+  a sticker and without — was counted nowhere outside that set's own page; and
+  dropdown options looked disabled on a dark interface.
+
+Updating adds a table for the wishlist on first start. Nothing else changes:
+no new options, and the add-on folder stays as it is.
+
 ## 1.1.0.0
 
 Built from BrickCollector 1.1.0.
