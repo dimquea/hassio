@@ -1,5 +1,29 @@
 # Changelog
 
+## 1.3.0.0
+
+Built from BrickCollector 1.3.0.
+
+- **Export to BrickLink XML** — a button beside the ordering in every list, and
+  what comes out is exactly what the filter shows: what you hold as an
+  inventory, what is missing as a wanted list with the sets it is missing from
+  written in the remarks. An assembly exports what it is made of and, apart
+  from that, what it still needs.
+- **Two more filters** — minifigures a set is missing, and parts by a tag put
+  on a loose lot. The part page also names the tags of its lots, which until
+  now could be seen only by opening the lot itself.
+- **Colour is shown as a colour** — every colour select carries the same swatch
+  as the tables do. The catalogue card keeps the colour you arrived in as well:
+  the picture, the links out and the dialog that adds to the collection all
+  follow it.
+- The redirect fix for the panel: under Ingress a redirect went out with an
+  absolute address, which the panel refuses. Adding to the wishlist failed
+  there, and the message about what had happened sat in the session until some
+  later page showed it.
+
+Nothing to do when updating: no new options, no change to the database. The
+add-on folder and everything in it stay as they are.
+
 ## 1.2.0.0
 
 Built from BrickCollector 1.2.0.
