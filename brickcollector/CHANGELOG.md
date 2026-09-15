@@ -1,5 +1,19 @@
 # Changelog
 
+## 1.4.1.0
+
+Built from BrickCollector 1.4.1.
+
+- **Import into an assembly** — the piece left out of 1.4.0. The import's
+  switch gains a way into an assembly, with the assemblies beside it and a new
+  one at the top; a new assembly takes the name of the file. Parts go in the
+  way they do from the catalogue, so the same part in the same colour folds
+  into one line and the loose pile is left as it was. Only parts go in, and an
+  import where nothing fits creates no empty assembly.
+
+Nothing to do when updating: no new options, no change to the database. The
+add-on folder and everything in it stay as they are.
+
 ## 1.4.0.0
 
 Built from BrickCollector 1.4.0.
