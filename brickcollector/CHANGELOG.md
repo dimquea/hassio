@@ -1,5 +1,30 @@
 # Changelog
 
+## 1.4.0.0
+
+Built from BrickCollector 1.4.0.
+
+- **Import from a BrickLink XML file** — a section of its own. The file is read
+  and shown first, and nothing is created until the rows are ticked and the
+  button pressed. Both kinds of file are understood: an inventory goes into the
+  collection, a wanted list into the wishlist, and a switch overrides that.
+  Details entered above apply to every entry created, a row can override them,
+  and a remark from the file becomes that entry's note.
+- **Finding a part by photograph**, through Brickognize. It stays off until you
+  switch it on under Settings, where the reason is written beside the switch:
+  the photo goes to an outside service and, by that service's terms, stays with
+  it. Under the panel there is no separate camera button — a browser grants an
+  iframe the camera only when the page embedding it says so — but the system
+  file picker offers the camera itself on a phone.
+- A composite part — a torso, a pair of legs — is counted once again, instead of
+  once as itself and once more as the pieces it is described by.
+- Redirects name where they go: adding a picture to an assembly no longer lands
+  on the home page.
+
+Updating tidies the collection once, removing the rows that were written for the
+pieces of composite parts. Nothing else changes: no new options, and the add-on
+folder is left alone.
+
 ## 1.3.0.0
 
 Built from BrickCollector 1.3.0.

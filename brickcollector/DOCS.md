@@ -82,6 +82,19 @@ at all.
 Where the catalogue archive comes from. By default the latest build of
 [rgriebl/brickstore-database][db], which is refreshed automatically.
 
+## Search by photo
+
+The application can identify a part from a photograph, through Brickognize — an
+outside service. It is off until you switch it on under **Settings**, where the
+reason is spelled out beside the switch: the picture leaves your house, and by
+that service's terms it stays with them.
+
+One thing works differently under the panel: there is no separate "take a photo"
+button. The add-on is shown in an iframe, and a browser grants an iframe the
+camera only when the page embedding it says so — which is Home Assistant's call
+and not something an add-on can ask for. Choosing a file still works, and on a
+phone the system file picker offers the camera itself.
+
 ## Where the data lives
 
 Everything mutable is in the add-on folder,
