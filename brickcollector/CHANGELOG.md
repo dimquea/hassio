@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.4.2.0
+
+Built from BrickCollector 1.4.2.
+
+- Filtering loose parts by a tag shows how much is actually tagged: the loose
+  column reads "11 (12)" — the tagged lots, then everything loose — and an
+  export under a tag takes only the tagged lots.
+- A hint whose placeholders began with one another's names came out garbled;
+  translations are filled in one pass now.
+
+Nothing to do when updating: no new options, no change to the database. The
+add-on folder and everything in it stay as they are.
+
 ## 1.4.1.0
 
 Built from BrickCollector 1.4.1.
