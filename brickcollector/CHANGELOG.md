@@ -1,5 +1,21 @@
 # Changelog
 
+## 1.5.1.0
+
+Built from BrickCollector 1.5.1.
+
+- The row of a minifigure inside a set ran off the card on a phone, carrying
+  its chevron off the edge. The row now holds the item number and the counts,
+  and the name moved into the body, where there is room to write it out in
+  full. On a narrow screen the badges for spares and losses keep their numbers
+  and drop the word before them.
+- A picture inside a card always opens now. In 1.5.0 the magnifier appeared on
+  one picture and not on the next, depending on the size of the file behind it,
+  with nothing on screen to explain the difference.
+
+Nothing to do when updating: no new options, no change to the database. The
+add-on folder and everything in it stay as they are.
+
 ## 1.5.0.0
 
 Built from BrickCollector 1.5.0.
