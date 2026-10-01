@@ -1,5 +1,26 @@
 # Changelog
 
+## 1.5.0.0
+
+Built from BrickCollector 1.5.0.
+
+- **A picture opens at its own size.** In a table a picture is the size of a
+  thumbnail and in a card about three hundred points, while the file behind it
+  is two to three times that, so the pattern on a printed tile could not be
+  made out. A click on a picture inside a card — the main one, or a thumbnail
+  in a table of what something holds or where it turns up — shows it on a
+  dimmed layer, up to 95% of the window; a double click doubles that. Lists
+  keep what they had: there a picture is how one opens the thing.
+- **"In the collection" on a catalogue card** — whether the thing is here and
+  where exactly, with a tab per place: loose lots, copies, the sets and figures
+  it is built into, the assemblies it went to. For a part it follows the colour
+  of the card.
+- Two fixes: the second page of "part of" landed on the home page, and a
+  minifigure holding a part opened in the catalogue instead of the collection.
+
+Nothing to do when updating: no new options, no change to the database. The
+add-on folder and everything in it stay as they are.
+
 ## 1.4.2.0
 
 Built from BrickCollector 1.4.2.
