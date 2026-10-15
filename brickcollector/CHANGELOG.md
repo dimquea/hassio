@@ -1,5 +1,38 @@
 # Changelog
 
+## 1.6.0.0
+
+Built from BrickCollector 1.6.0.
+
+- **What a set holds besides parts and figures** — gear, a book, a catalogue.
+  Those lines were in the collection all along and shown nowhere; now each kind
+  has its own group on the page of a set and its own number on the catalogue
+  card, with its colour. The storage case in 8500 through 8507 comes in a
+  different one each time, and all eight used to look alike.
+- **"Refresh the inventories"**, under Settings → Catalogue. An inventory is
+  copied into the collection when something is added and lives on its own
+  after that. When the catalogue is later corrected, this rebuilds the
+  inventories of sets and figures from it — by hand, never by itself. Marks for
+  missing pieces are carried to their places; any that have nowhere to go are
+  listed rather than quietly dropped. Assemblies and loose lots are left alone.
+- **"Serve pictures through the application"**, under Settings → Appearance,
+  on by default. Turned off, the browser fetches a picture from BrickLink
+  itself and it appears without waiting for the background download.
+- **"Incomplete" in the minifigure filter** — figures missing a piece of their
+  own, which until now showed only from inside the set holding them.
+- **Three kinds of export**, chosen by name: an inventory and a wanted list,
+  both BrickLink XML as before, and a BrickStore basket (.bsx), which opens in
+  BrickStore by double click.
+- **A picture zooms by wheel and by pinch** instead of the one step a double
+  click gave, and what no longer fits is dragged.
+- **Each section remembers how it was last sorted.**
+- Two fixes: a minifigure inside a minifigure — a Technic figure with a helmet
+  — was counted twice, and the analytics tables counted copies in one column
+  and distinct item numbers in the next under headings that read the same.
+
+Nothing to do when updating: no new options, no change to the database. The
+add-on folder and everything in it stay as they are.
+
 ## 1.5.1.0
 
 Built from BrickCollector 1.5.1.
