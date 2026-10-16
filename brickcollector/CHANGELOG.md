@@ -1,5 +1,30 @@
 # Changelog
 
+## 1.7.0.0
+
+Built from BrickCollector 1.7.0.
+
+- **The number printed in the instructions finds the part.** A LEGO element
+  number — 4243815 — is what an instruction and the Pick a Brick shelf call a
+  part, and until now nothing answered to it, although the catalogue has known
+  111 thousand of them all along. Alternate BrickLink numbers too. Both work in
+  the catalogue and in the sections of the collection, where the question
+  usually is "do I have this brick". In the parts list the match is exact to the
+  row — an element number names a part in a colour, which is just what a row
+  there is.
+- **Narrowing a theme to a sub-theme.** "Star Wars" is a thousand sets in the
+  catalogue and often half a shelf at home. A second list appears under the
+  first once a theme is chosen: the catalogue offers every sub-theme, a section
+  of the collection only what it holds. Links keep working as they were.
+- **A colour for everything that has one.** The Throwbot storage case comes in
+  a different colour in each of 8500 through 8507, and five hundred such items
+  are recorded with a colour. The card offers those colours now, and a copy
+  added to the collection remembers the one it was added in.
+- A fix: a long value made a dropdown stand twice as tall as its neighbours.
+
+Nothing to do when updating: no new options, no change to the database. The
+add-on folder and everything in it stay as they are.
+
 ## 1.6.0.0
 
 Built from BrickCollector 1.6.0.
