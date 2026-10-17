@@ -1,5 +1,5 @@
 name: BrickCollector
-version: 1.7.0.0
+version: 1.8.0.0
 description: Self-hosted LEGO collection manager backed by the BrickLink catalog.
 url: https://github.com/dimquea/hassio/tree/main/brickcollector
 slug: brickcollector
@@ -9,11 +9,17 @@ arch:
   - amd64
 startup: application
 boot: auto
-# Ingress only. There is no ports section on purpose: the add-on has no
-# authentication of its own, so the Home Assistant panel is the only way in and
-# the collection cannot be reached past it.
+# The Home Assistant panel is the way in. Direct access is off unless a host
+# port is entered under Network: the add-on has no authentication of its own,
+# so whoever reaches that port reaches the whole collection. It is there for
+# what the panel cannot do — the camera, which a page inside the panel's frame
+# is not allowed to use.
 ingress: true
 ingress_port: 8099
+ports:
+  8100/tcp: null
+ports_description:
+  8100/tcp: Direct access, without Home Assistant and without a login (home network only)
 panel_icon: mdi:toy-brick
 panel_title: BrickCollector
 panel_admin: false

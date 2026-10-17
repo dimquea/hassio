@@ -1,5 +1,32 @@
 # Changelog
 
+## 1.8.0.0
+
+Built from BrickCollector 1.8.0.
+
+- **Direct access, if you want it.** The panel cannot do one thing: the camera — a page inside
+  the panel's frame may not use it. Enter a port under **Network** on the Configuration tab and
+  the application is also reachable at `http://<Home Assistant address>:<port>`. Off until a port
+  is entered. **There is no login on that port**: home network only, never forwarded on a router.
+  On that port the Ingress header is wiped, so nobody can rewrite the links on a page with it, and
+  the Ingress port itself now answers Home Assistant only.
+- **Pick a set from the collection.** The catalogue card of a set or a minifigure tells how much
+  of it is already here — anywhere, in other sets, or loose — exports what is short, and can add
+  the set built from loose parts: a CSV says beforehand which lots go and where they are stored,
+  and whatever is not found is marked missing.
+- **Part a set out.** Its parts go to the loose pile, its minifigures become copies of their own,
+  with the storage place and purchase date of the set.
+- **The shortage of a set exports from its page**, group by group, the whole tree.
+- **A note on a minifigure or a sub-set inside a set** — a crack in a leg — shown on the
+  figure's card too.
+- **A camera button in the photo search**, under Settings → Search by photo, for when the
+  application is opened directly.
+- Fixes: under the "missing" filter every kind of export carries the shortage; opening a section
+  no longer sends two requests, and the message after removing a set stays on screen.
+
+Updating: the database gains one column on the first start, by itself. Nothing to configure —
+direct access stays off unless you enter a port.
+
 ## 1.7.0.0
 
 Built from BrickCollector 1.7.0.
