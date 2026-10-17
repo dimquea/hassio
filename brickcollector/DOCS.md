@@ -17,13 +17,31 @@ catalogue inside it. Opens as a panel in the Home Assistant sidebar.
 
 ## Access
 
-The add-on is reachable **through the Home Assistant panel only**. No port is
-published, and that is deliberate: the application has no authentication of its
-own, so the one door in is the one Home Assistant guards. Whoever can open the
-panel can open the collection.
+By default the add-on is reachable **through the Home Assistant panel only**,
+and that is the way in to use: the application has no authentication of its
+own, so the door Home Assistant guards is the one that keeps the collection
+yours.
 
-If you need it from outside, the answer is not to publish a port but to set up
-external access to Home Assistant itself.
+### Direct access
+
+One thing the panel cannot do is the camera. The panel shows the application
+inside a frame, and a page in that frame is not allowed to use it — so the
+**Take a photo** button of the photo search only works when the application is
+opened directly.
+
+To open it directly, go to the add-on's **Configuration** tab, enter a port
+under **Network** — `8100`, say — and restart the add-on. The application is
+then at `http://<Home Assistant address>:8100`. Clear the field to close the
+door again.
+
+> **Warning: there is no login on that port.** Anyone who can reach it can see,
+> change and delete the whole collection, and import a catalogue over it. Use it
+> on your home network only, and **never forward it on your router**. To reach
+> the collection from outside, set up external access to Home Assistant itself
+> and keep using the panel.
+
+The camera button is off by default; turn it on under **Settings → Search by
+photo** in the application.
 
 ## Configuration
 

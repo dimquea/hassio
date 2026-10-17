@@ -17,8 +17,9 @@ brickcollector::environment() {
     # обновлении. /config — это папка аддона в addon_configs.
     export BRICKCOLLECTOR_DATA_PATH="${BRICKCOLLECTOR_DATA}"
 
-    # Разрешаем верить заголовку X-Ingress-Path. Порт наружу не выставлен,
-    # подделать его снаружи некому.
+    # Разрешаем верить заголовку X-Ingress-Path. Подделать его некому: порт
+    # Ingress пускает только Home Assistant, а на прямом входе nginx заголовок
+    # стирает (см. nginx.conf).
     export BRICKCOLLECTOR_TRUST_INGRESS=true
 
     # Чем запускать artisan для обновления справочника из интерфейса: угадать
