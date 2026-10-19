@@ -1,5 +1,24 @@
 # Changelog
 
+## 1.9.0.0
+
+Built from BrickCollector 1.9.0.
+
+- **Find a set by a handful of its parts.** At the bottom of the catalogue filters: an item
+  number and a colour per row, [+] for another. Sets come back that hold at least one of each —
+  loose in the box, in a minifigure or in a sub-set. An element number from the instructions works
+  too.
+- **New or used, as a field.** A switch in the management block of a copy, a badge on its card, a
+  "Used" filter in sets, parts and minifigures. The import reads it from BrickLink files, and it
+  carries over when a set is parted out or built from loose parts.
+- **Stock for a store.** Two new export kinds — a BrickStore document and a BrickLink Mass-Upload
+  file — list each loose lot, loose figure and set as a lot of its own, with its unit price,
+  condition and note. "BrickStore basket" is called "BrickStore document" now.
+
+Updating: the database gains one column on the first start, by itself; every copy starts as new.
+If you marked used copies with a tag, that tag stays as it was — moving it into the new field is a
+separate, one-off step.
+
 ## 1.8.0.0
 
 Built from BrickCollector 1.8.0.
