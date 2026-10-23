@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.10.0.0
+
+Built from BrickCollector 1.10.0.
+
+- **What sits inside a composite part.** A hand inside a torso is never counted apart — the torso
+  lies in the collection whole — but now it can be found: the page of a composite part shows what
+  it is made of, the page of a part says which composites hold it, and the parts section gains
+  "Inside composite parts" under "Where it is". For reference only; the counts are unchanged.
+- **Sorting and filtering the parts of a set**: "Missing only", a colour, and an order by number,
+  colour or quantity, remembered between visits.
+- **Money by kind** in the analytics: the total, and sets, loose minifigures and loose parts apart.
+- Cards in the lists read row by row now, and an export button shrinks to its icon on a phone.
+
+Nothing to do when updating: no new options, no change to the database.
+
 ## 1.9.0.0
 
 Built from BrickCollector 1.9.0.
