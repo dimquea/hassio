@@ -87,7 +87,9 @@ Once the add-on is running, the usual way to refresh the catalogue is
 Whether to cache pictures of the items you own, and in what batches. Showing a
 picture does not depend on this: anything not cached is loaded straight from
 BrickLink. The cache is what keeps a collection's pictures when the source will
-not answer.
+not answer. A picture that failed to download is tried again later — after a
+day, or after a month if BrickLink has no such picture, the wait doubling each
+time; Settings → Catalogue shows what is missing and why.
 
 The catalogue is not cached at all — it holds 175 thousand items. A collection
 of ordinary size is a few thousand files; at the defaults (200 pictures every

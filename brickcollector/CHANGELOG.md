@@ -1,5 +1,22 @@
 # Changelog
 
+## 1.11.0.0
+
+Built from BrickCollector 1.11.0.
+
+- **The collection follows BrickLink renames.** When BrickLink renumbers an item or merges two,
+  the collection moves to the new number after the catalogue update by itself — copies, inventory
+  rows and wishes, with their quantities, losses and notes — and "Refresh inventories" no longer
+  loses a mark on a renamed part. Settings → Catalogue lists what was renamed, old → new. A copy
+  whose type changed is listed for you to fix by hand.
+- **Pictures that failed are tried again**, after a day, or after a month if BrickLink has no such
+  picture, the wait doubling each time. Settings → Catalogue shows what is not downloaded and why,
+  with "Retry now".
+- **Fixed:** the page of a common part, such as an axle in black, hung since 1.10.0.
+
+Updating: the database gains a table and two columns on the first start, by itself. Pictures that
+failed before are tried again on the next fetch run.
+
 ## 1.10.0.0
 
 Built from BrickCollector 1.10.0.
