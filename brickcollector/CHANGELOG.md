@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.11.1.0
+
+Built from BrickCollector 1.11.1.
+
+- **Compact pagination.** Lists and the catalogue's "Part of" section show a shorter
+  range of page numbers. Previous and Next follow the selected language, and phones
+  show their arrows beside the page numbers.
+
 ## 1.11.0.0
 
 Built from BrickCollector 1.11.0.
